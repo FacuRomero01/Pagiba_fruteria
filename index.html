@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tienda de frutas</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <a href="index.html" class="logo-link">
+            <div class="logo">Frutería</div>
+        </a>
+        
+        <div id="nombreAlumno"></div>
+        
+        <input type="text" placeholder="Buscar..." class="barra-busqueda" id="input-busqueda">
+        
+        <div class="carrito">
+            <span>Carrito: <span id="contador-carrito">0</span> productos</span>
+        </div>
+    </header>
+
+    
+    <!-- Contenedor principal -->
+    <main>
+		<section class="seccion-productos">
+		    <h2>Nuestras frutas</h2>
+            <div class="botones-orden">
+                <button id="a-z">A - Z</button>
+                <button id="z-a">Z - A</button>
+                <button id="btn-menor">Menor Precio</button>
+                <button id="btn-mayor">Mayor precio</button>
+            </div>
+		    <div id="contenedor-productos"></div>
+		</section>
+
+
+		<!-- Seccion carrito -->
+		<section class="seccion-carrito">
+		    <h2>Carrito</h2>
+		    
+		    <div id="items-carrito">
+		        <p>No hay elementos en el carrito.</p>
+		    </div>
+
+            <button id="btn-vaciar" class="boton-vaciar">Vaciar Carrito</button>
+
+		    <div class="total-carrito">
+		        <p>Total: <span id="precio-total">$0.00</span></p>
+		    
+		    </div>
+		</section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
